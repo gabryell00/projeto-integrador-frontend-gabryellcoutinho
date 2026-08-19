@@ -3,22 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Oficina do Vinil</title>
+    <title>Taverna do D20</title>
   </head>
   <body>
     <header>
       <p>
         <button type="button" aria-label="Fechar aviso de promoção">×</button>
-        Sessões de escuta com 20% de desconto nesta semana.
+        One-shots de sexta com 20% de desconto nesta semana.
       </p>
-      <h1>Oficina do Vinil</h1>
+      <h1>Taverna do D20</h1>
       <p>
-        Catálogo online de uma loja fictícia de discos de vinil usados em Recife,
-        para descobrir álbuns raros e reservar sessões de escuta antes da compra.
+        Catálogo online de uma guilda fictícia de RPG de mesa em Recife, para
+        descobrir campanhas, sistemas e reservar uma cadeira na próxima sessão.
       </p>
       <img
-        src="assets/images/disco-vinil.svg"
-        alt="Disco de vinil preto com rótulo laranja escrito Oficina do Vinil"
+        src="assets/images/dado-d20.svg"
+        alt="Dado de vinte faces vermelho com o número 20 no centro"
         width="320"
         height="320"
       />
@@ -26,59 +26,59 @@
 
     <main>
       <section>
-        <h2>O que você encontra na loja</h2>
+        <h2>O que você encontra na taverna</h2>
         <ul>
-          <li>Discos nacionais e importados em estado avaliado</li>
-          <li>Sessões de escuta com toca-discos na loja</li>
-          <li>Limpeza e avaliação de vinil antes da venda</li>
+          <li>Mesas abertas de D&amp;D 5e, Tormenta20 e sistemas indie</li>
+          <li>Livros, fichas e miniaturas para usar na sessão</li>
+          <li>One-shots, campanhas longas e tutoriais para quem nunca jogou</li>
         </ul>
         <p>
-          Consulte edições, matrizes e preços de mercado no
+          Consulte regras oficiais, suplementos e lançamentos na
           <a
-            href="https://www.discogs.com"
+            href="https://jamboeditora.com.br"
             target="_blank"
             rel="noopener noreferrer"
-            >Discogs</a
+            >Jambô Editora</a
           >.
         </p>
       </section>
 
       <section>
-        <h2>Álbuns em destaque</h2>
+        <h2>Mesas em destaque</h2>
         <table>
           <caption>
-            Discos disponíveis nesta semana
+            Campanhas com vagas nesta semana
           </caption>
           <thead>
             <tr>
-              <th>Álbum</th>
-              <th>Artista</th>
-              <th>Ano</th>
-              <th>Preço</th>
+              <th>Aventura</th>
+              <th>Sistema</th>
+              <th>Nível</th>
+              <th>Vagas</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Acabou Chorare</td>
-              <td>Novos Baianos</td>
-              <td>1972</td>
-              <td>R$ 180</td>
+              <td>A Maldição de Strahd</td>
+              <td>D&amp;D 5e</td>
+              <td>5</td>
+              <td>2 cadeiras</td>
             </tr>
             <tr>
-              <td>Construção</td>
-              <td>Chico Buarque</td>
-              <td>1971</td>
-              <td>R$ 220</td>
+              <td>O Coração de Rubra</td>
+              <td>Tormenta20</td>
+              <td>3</td>
+              <td>3 cadeiras</td>
             </tr>
           </tbody>
         </table>
       </section>
 
       <section>
-        <h2>Reserve uma sessão de escuta</h2>
+        <h2>Reserve uma cadeira na mesa</h2>
         <p>
-          Escolha data, horário e o tipo de sessão. Confirmamos o toca-discos por
-          e-mail.
+          Escolha data, horário e o tipo de sessão. Confirmamos a vaga e o
+          sistema por e-mail.
         </p>
 
         <form action="#" method="post">
@@ -86,7 +86,7 @@
             <legend>Seus dados</legend>
 
             <p>
-              <label for="nome">Nome completo</label>
+              <label for="nome">Nome do jogador</label>
               <input
                 type="text"
                 id="nome"
@@ -138,20 +138,20 @@
                 type="time"
                 id="horario"
                 name="horario"
-                min="10:00"
-                max="18:00"
+                min="14:00"
+                max="22:00"
                 required
               />
             </p>
 
             <p>
-              <label for="pessoas">Quantidade de pessoas</label>
+              <label for="pessoas">Tamanho do grupo</label>
               <input
                 type="number"
                 id="pessoas"
                 name="pessoas"
                 min="1"
-                max="4"
+                max="6"
                 value="1"
                 required
               />
@@ -161,28 +161,33 @@
               <label for="tipo-sessao">Tipo de sessão</label>
               <select id="tipo-sessao" name="tipo-sessao" required>
                 <option value="">Selecione uma opção</option>
-                <option value="individual">Audição individual (30 min)</option>
-                <option value="dupla">Audição em dupla (45 min)</option>
-                <option value="avaliacao">Avaliação de disco próprio</option>
-                <option value="limpeza">Limpeza de vinil</option>
+                <option value="oneshot">One-shot (3 horas)</option>
+                <option value="campanha">Sessão de campanha (4 horas)</option>
+                <option value="tutorial">Tutorial para iniciantes</option>
+                <option value="mesa-aberta">Mesa aberta da taverna</option>
               </select>
             </p>
 
             <fieldset>
-              <legend>Formato de interesse</legend>
+              <legend>Formato da mesa</legend>
               <p>
                 <input
                   type="radio"
-                  id="formato-lp"
+                  id="formato-presencial"
                   name="formato"
-                  value="lp"
+                  value="presencial"
                   checked
                 />
-                <label for="formato-lp">LP (12 polegadas)</label>
+                <label for="formato-presencial">Presencial na taverna</label>
               </p>
               <p>
-                <input type="radio" id="formato-ep" name="formato" value="ep" />
-                <label for="formato-ep">EP / compacto (7 polegadas)</label>
+                <input
+                  type="radio"
+                  id="formato-online"
+                  name="formato"
+                  value="online"
+                />
+                <label for="formato-online">Online (Roll20 / Discord)</label>
               </p>
             </fieldset>
           </fieldset>
@@ -195,7 +200,7 @@
     </main>
 
     <footer>
-      <p>Oficina do Vinil — Recife, PE. Projeto Integrador de Front-end para Web.</p>
+      <p>Taverna do D20 — Recife, PE. Projeto Integrador de Front-end para Web.</p>
     </footer>
   </body>
 </html>
