@@ -6,63 +6,196 @@
     <title>Oficina do Vinil</title>
   </head>
   <body>
-    <h1>Oficina do Vinil</h1>
-    <p>
-      Catálogo online de uma loja fictícia de discos de vinil usados em Recife,
-      para descobrir álbuns raros e reservar sessões de escuta antes da compra.
-    </p>
+    <header>
+      <p>
+        <button type="button" aria-label="Fechar aviso de promoção">×</button>
+        Sessões de escuta com 20% de desconto nesta semana.
+      </p>
+      <h1>Oficina do Vinil</h1>
+      <p>
+        Catálogo online de uma loja fictícia de discos de vinil usados em Recife,
+        para descobrir álbuns raros e reservar sessões de escuta antes da compra.
+      </p>
+      <img
+        src="assets/images/disco-vinil.svg"
+        alt="Disco de vinil preto com rótulo laranja escrito Oficina do Vinil"
+        width="320"
+        height="320"
+      />
+    </header>
 
-    <img
-      src="assets/images/disco-vinil.svg"
-      alt="Disco de vinil preto com rótulo laranja escrito Oficina do Vinil"
-      width="320"
-      height="320"
-    />
+    <main>
+      <section>
+        <h2>O que você encontra na loja</h2>
+        <ul>
+          <li>Discos nacionais e importados em estado avaliado</li>
+          <li>Sessões de escuta com toca-discos na loja</li>
+          <li>Limpeza e avaliação de vinil antes da venda</li>
+        </ul>
+        <p>
+          Consulte edições, matrizes e preços de mercado no
+          <a
+            href="https://www.discogs.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Discogs</a
+          >.
+        </p>
+      </section>
 
-    <h2>O que você encontra na loja</h2>
-    <ul>
-      <li>Discos nacionais e importados em estado avaliado</li>
-      <li>Sessões de escuta com toca-discos na loja</li>
-      <li>Limpeza e avaliação de vinil antes da venda</li>
-    </ul>
+      <section>
+        <h2>Álbuns em destaque</h2>
+        <table>
+          <caption>
+            Discos disponíveis nesta semana
+          </caption>
+          <thead>
+            <tr>
+              <th>Álbum</th>
+              <th>Artista</th>
+              <th>Ano</th>
+              <th>Preço</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Acabou Chorare</td>
+              <td>Novos Baianos</td>
+              <td>1972</td>
+              <td>R$ 180</td>
+            </tr>
+            <tr>
+              <td>Construção</td>
+              <td>Chico Buarque</td>
+              <td>1971</td>
+              <td>R$ 220</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
 
-    <h2>Álbuns em destaque</h2>
-    <table>
-      <caption>
-        Discos disponíveis nesta semana
-      </caption>
-      <thead>
-        <tr>
-          <th>Álbum</th>
-          <th>Artista</th>
-          <th>Ano</th>
-          <th>Preço</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Acabou Chorare</td>
-          <td>Novos Baianos</td>
-          <td>1972</td>
-          <td>R$ 180</td>
-        </tr>
-        <tr>
-          <td>Construção</td>
-          <td>Chico Buarque</td>
-          <td>1971</td>
-          <td>R$ 220</td>
-        </tr>
-      </tbody>
-    </table>
+      <section>
+        <h2>Reserve uma sessão de escuta</h2>
+        <p>
+          Escolha data, horário e o tipo de sessão. Confirmamos o toca-discos por
+          e-mail.
+        </p>
 
-    <p>
-      Consulte edições, matrizes e preços de mercado no
-      <a
-        href="https://www.discogs.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        >Discogs</a
-      >.
-    </p>
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Seus dados</legend>
+
+            <p>
+              <label for="nome">Nome completo</label>
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                autocomplete="name"
+                required
+                minlength="3"
+              />
+            </p>
+
+            <p>
+              <label for="email">E-mail</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                autocomplete="email"
+                required
+              />
+            </p>
+
+            <p>
+              <label for="telefone">Telefone</label>
+              <input
+                type="tel"
+                id="telefone"
+                name="telefone"
+                autocomplete="tel"
+                inputmode="numeric"
+                placeholder="81999999999"
+                pattern="[0-9]{10,11}"
+                title="Informe DDD e número, só dígitos, com 10 ou 11 números"
+                required
+              />
+            </p>
+          </fieldset>
+
+          <fieldset>
+            <legend>Detalhes da sessão</legend>
+
+            <p>
+              <label for="data">Data</label>
+              <input type="date" id="data" name="data" min="2026-08-19" required />
+            </p>
+
+            <p>
+              <label for="horario">Horário</label>
+              <input
+                type="time"
+                id="horario"
+                name="horario"
+                min="10:00"
+                max="18:00"
+                required
+              />
+            </p>
+
+            <p>
+              <label for="pessoas">Quantidade de pessoas</label>
+              <input
+                type="number"
+                id="pessoas"
+                name="pessoas"
+                min="1"
+                max="4"
+                value="1"
+                required
+              />
+            </p>
+
+            <p>
+              <label for="tipo-sessao">Tipo de sessão</label>
+              <select id="tipo-sessao" name="tipo-sessao" required>
+                <option value="">Selecione uma opção</option>
+                <option value="individual">Audição individual (30 min)</option>
+                <option value="dupla">Audição em dupla (45 min)</option>
+                <option value="avaliacao">Avaliação de disco próprio</option>
+                <option value="limpeza">Limpeza de vinil</option>
+              </select>
+            </p>
+
+            <fieldset>
+              <legend>Formato de interesse</legend>
+              <p>
+                <input
+                  type="radio"
+                  id="formato-lp"
+                  name="formato"
+                  value="lp"
+                  checked
+                />
+                <label for="formato-lp">LP (12 polegadas)</label>
+              </p>
+              <p>
+                <input type="radio" id="formato-ep" name="formato" value="ep" />
+                <label for="formato-ep">EP / compacto (7 polegadas)</label>
+              </p>
+            </fieldset>
+          </fieldset>
+
+          <p>
+            <button type="submit">Enviar reserva</button>
+          </p>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>Oficina do Vinil — Recife, PE. Projeto Integrador de Front-end para Web.</p>
+    </footer>
   </body>
 </html>
