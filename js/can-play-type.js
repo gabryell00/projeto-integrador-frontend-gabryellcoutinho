@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const video = document.querySelector("#intro-sessao");
+  const video = document.querySelector("#video-boas-vindas");
   const status = document.querySelector("#formato-suportado");
 
   if (!video || !status || typeof video.canPlayType !== "function") {

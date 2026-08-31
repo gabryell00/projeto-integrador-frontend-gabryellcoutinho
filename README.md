@@ -2,6 +2,6 @@
 
 Projeto Integrador de Desenvolvimento Front-end para Web.
 
-O Ponto de Respawn é o catálogo online de um point fictício dedicado a RPGs eletrônicos marcantes — de Skyrim a Lords of the Fallen. O site apresenta os jogos em destaque, um trailer do espaço e a reserva de uma estação para quem quer jogar sem pressa.
+O Ponto de Respawn é um catálogo e hub de avaliações de RPGs eletrônicos marcantes — de Skyrim a Lords of the Fallen. O site reúne notas da crítica, um vídeo de boas-vindas e um formulário onde qualquer jogador pode avaliar um jogo do catálogo.
 
-O objetivo é reunir em um só lugar notas da crítica, guias e a possibilidade de reservar uma estação (presencial ou remota) para jogar os RPGs que marcaram o gênero.
+O objetivo é ajudar quem está decidindo o próximo RPG a jogar, combinando dados curados do catálogo com a opinião de quem já jogou.

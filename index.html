@@ -8,14 +8,14 @@
   <body>
     <header>
       <p>
-        <button type="button" aria-label="Fechar aviso de promoção">×</button>
-        Sessões noturnas com 20% de desconto nesta semana.
+        <button type="button" aria-label="Fechar aviso de novidade">×</button>
+        Lords of the Fallen acabou de entrar pro catálogo.
       </p>
       <h1>Ponto de Respawn</h1>
       <p>
-        Catálogo online de um point fictício dedicado a RPGs eletrônicos, para
-        descobrir os grandes nomes do gênero e reservar sua estação para jogar
-        sem pressa.
+        Catálogo e hub de avaliações de RPGs eletrônicos — notas, guias e
+        opinião de quem realmente jogou, sem review inflada por hype de
+        lançamento.
       </p>
       <img
         src="assets/images/emblema-respawn.svg"
@@ -27,14 +27,14 @@
 
     <main>
       <section>
-        <h2>O que você encontra aqui</h2>
+        <h2>O que rola por aqui</h2>
         <ul>
-          <li>Estações com os grandes RPGs do momento, prontas para jogar</li>
-          <li>Builds, guias e dicas para não travar em nenhum chefe</li>
-          <li>Sessões avulsas, maratonas e tutoriais para quem tá começando agora</li>
+          <li>Notas da crítica e da galera, lado a lado</li>
+          <li>Guias e builds sem spoiler de história</li>
+          <li>Avaliações de quem realmente zerou o jogo</li>
         </ul>
         <p>
-          Consulte reviews, guias e lançamentos na
+          Acompanhe reviews e lançamentos também na
           <a
             href="https://www.ign.com"
             target="_blank"
@@ -94,39 +94,36 @@
       </section>
 
       <section>
-        <h2>Trailer do point</h2>
-        <p>
-          Um convite rápido: como funciona reservar sua estação e escolher o
-          RPG do dia.
-        </p>
+        <h2>Boas-vindas ao Ponto de Respawn</h2>
+        <p>Um convite rápido pra conhecer o catálogo e como ele funciona.</p>
         <!--
           preload="none": o vídeo fica abaixo da dobra (depois do cabeçalho,
           da lista e da tabela). Não baixamos mídia até o visitante dar play,
           o que economiza dados em conexões lentas (Seção 6.1).
           metadata serviria só para duração; auto faria download imediato
-          e não cabe neste trailer secundário.
+          e não cabe neste vídeo secundário de apresentação.
         -->
         <video
-          id="intro-sessao"
+          id="video-boas-vindas"
           controls
-          poster="assets/images/poster-trailer-respawn-point.jpg"
+          poster="assets/images/poster-boas-vindas.svg"
           preload="none"
           width="854"
           height="480"
         >
-          <source src="assets/videos/trailer-respawn-point.webm" type="video/webm" />
-          <source src="assets/videos/trailer-respawn-point.mp4" type="video/mp4" />
+          <source src="assets/videos/boas-vindas.webm" type="video/webm" />
+          <source src="assets/videos/boas-vindas.mp4" type="video/mp4" />
           <track
             kind="subtitles"
-            src="assets/captions/trailer-respawn-point.vtt"
+            src="assets/captions/boas-vindas.vtt"
             srclang="pt"
             label="Português"
             default
           />
           Seu navegador não reproduz vídeo HTML5. Baixe o
-          <a href="assets/videos/trailer-respawn-point.mp4">MP4</a>
+          <a href="assets/videos/boas-vindas.mp4">MP4</a>
           ou o
-          <a href="assets/videos/trailer-respawn-point.webm">WebM</a>.
+          <a href="assets/videos/boas-vindas.webm">WebM</a>.
         </video>
         <p>
           <small id="formato-suportado"></small>
@@ -134,18 +131,18 @@
       </section>
 
       <section>
-        <h2>Reserve sua estação</h2>
+        <h2>Avalie um jogo do catálogo</h2>
         <p>
-          Escolha o jogo, a data e o horário. Confirmamos sua estação por
-          e-mail.
+          Já jogou algum desses RPGs? Deixe sua nota e sua opinião pra ajudar
+          quem tá decidindo o próximo jogo.
         </p>
 
         <form action="#" method="post">
           <fieldset>
-            <legend>Seus dados</legend>
+            <legend>Sobre você</legend>
 
             <p>
-              <label for="nome">Nome do jogador</label>
+              <label for="nome">Nome</label>
               <input
                 type="text"
                 id="nome"
@@ -166,28 +163,13 @@
                 required
               />
             </p>
-
-            <p>
-              <label for="telefone">Telefone</label>
-              <input
-                type="tel"
-                id="telefone"
-                name="telefone"
-                autocomplete="tel"
-                inputmode="numeric"
-                placeholder="81999999999"
-                pattern="[0-9]{10,11}"
-                title="Informe DDD e número, só dígitos, com 10 ou 11 números"
-                required
-              />
-            </p>
           </fieldset>
 
           <fieldset>
-            <legend>Detalhes da sessão</legend>
+            <legend>Sua avaliação</legend>
 
             <p>
-              <label for="jogo">Jogo</label>
+              <label for="jogo">Jogo avaliado</label>
               <select id="jogo" name="jogo" required>
                 <option value="">Selecione uma opção</option>
                 <option value="skyrim">The Elder Scrolls V: Skyrim</option>
@@ -195,77 +177,72 @@
                 <option value="witcher-3">The Witcher 3: Wild Hunt</option>
                 <option value="baldurs-gate-3">Baldur's Gate 3</option>
                 <option value="lords-of-the-fallen">Lords of the Fallen</option>
-                <option value="indeciso">Ainda não decidi</option>
+                <option value="outro">Outro</option>
               </select>
             </p>
 
             <p>
-              <label for="data">Data</label>
-              <input type="date" id="data" name="data" min="2026-08-31" required />
+              <label for="plataforma">Plataforma jogada</label>
+              <select id="plataforma" name="plataforma" required>
+                <option value="">Selecione uma opção</option>
+                <option value="pc">PC</option>
+                <option value="playstation">PlayStation</option>
+                <option value="xbox">Xbox</option>
+                <option value="switch">Nintendo Switch</option>
+              </select>
             </p>
 
             <p>
-              <label for="horario">Horário</label>
-              <input
-                type="time"
-                id="horario"
-                name="horario"
-                min="14:00"
-                max="22:00"
-                required
-              />
-            </p>
-
-            <p>
-              <label for="pessoas">Tamanho do grupo</label>
+              <label for="nota">Sua nota (0 a 10)</label>
               <input
                 type="number"
-                id="pessoas"
-                name="pessoas"
-                min="1"
-                max="4"
-                value="1"
+                id="nota"
+                name="nota"
+                min="0"
+                max="10"
+                step="0.1"
                 required
               />
-            </p>
-
-            <p>
-              <label for="tipo-sessao">Tipo de sessão</label>
-              <select id="tipo-sessao" name="tipo-sessao" required>
-                <option value="">Selecione uma opção</option>
-                <option value="avulsa">Sessão avulsa (2 horas)</option>
-                <option value="maratona">Maratona (4 horas)</option>
-                <option value="tutorial">Tutorial para iniciantes</option>
-                <option value="estacao-livre">Estação livre</option>
-              </select>
             </p>
 
             <fieldset>
-              <legend>Formato da sessão</legend>
+              <legend>Recomendaria a outros jogadores?</legend>
               <p>
                 <input
                   type="radio"
-                  id="formato-presencial"
-                  name="formato"
-                  value="presencial"
-                  checked
+                  id="recomendaria-sim"
+                  name="recomendaria"
+                  value="sim"
+                  required
                 />
-                <label for="formato-presencial">Presencial no Point</label>
+                <label for="recomendaria-sim">Sim</label>
               </p>
               <p>
                 <input
                   type="radio"
-                  id="formato-online"
-                  name="formato"
-                  value="online"
+                  id="recomendaria-nao"
+                  name="recomendaria"
+                  value="nao"
                 />
-                <label for="formato-online">Online (Steam Remote Play / Discord)</label>
+                <label for="recomendaria-nao">Não</label>
               </p>
             </fieldset>
+
+            <p>
+              <label for="comentario">Comentário (sem spoiler, por favor)</label>
+            </p>
+            <p>
+              <textarea
+                id="comentario"
+                name="comentario"
+                rows="4"
+                placeholder="O que achou do jogo?"
+              ></textarea>
+            </p>
           </fieldset>
 
           <p>
-            <button type="submit">Enviar reserva</button>
+            <button type="submit">Enviar avaliação</button>
           </p>
         </form>
       </section>
