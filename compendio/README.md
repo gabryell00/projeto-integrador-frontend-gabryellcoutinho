@@ -4,9 +4,10 @@ Atividade prática da Aula 05 (HTML5 — Recursos Gráficos: Canvas e SVG) — D
 
 Tema próprio, distinto do exemplo do professor: um pequeno catálogo de RPGs eletrônicos lendários.
 
-> **Nota:** esta é uma atividade avulsa, fora do fluxo contínuo do Projeto Integrador
-> (Taverna do D20). Fica isolada nesta pasta para não se misturar com o restante do
-> projeto — dá pra reaproveitar mais pra frente se fizer sentido.
+> **Nota:** nasceu como atividade avulsa, fora do fluxo contínuo do Projeto Integrador
+> (na época, a "Taverna do D20"). Com a virada de tema pra RPGs eletrônicos, virou o
+> compêndio ilustrado do [Ponto de Respawn](../index.html) — acessível a partir da
+> página principal.
 
 ## O que tem aqui
 

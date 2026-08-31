@@ -47,6 +47,21 @@ body {
   box-shadow: var(--shadow);
 }
 
+.voltar {
+  margin: 0 0 10px;
+  font-size: 0.82rem;
+}
+
+.voltar a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.voltar a:hover {
+  color: var(--dourado-claro);
+  text-decoration: underline;
+}
+
 .intro h1 {
   margin: 0 0 8px;
   font-family: "Cinzel", "IBM Plex Sans", serif;
