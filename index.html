@@ -3,22 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Taverna do D20</title>
+    <title>Ponto de Respawn</title>
   </head>
   <body>
     <header>
       <p>
         <button type="button" aria-label="Fechar aviso de promoção">×</button>
-        One-shots de sexta com 20% de desconto nesta semana.
+        Sessões noturnas com 20% de desconto nesta semana.
       </p>
-      <h1>Taverna do D20</h1>
+      <h1>Ponto de Respawn</h1>
       <p>
-        Catálogo online de uma guilda fictícia de RPG de mesa em Recife, para
-        descobrir campanhas, sistemas e reservar uma cadeira na próxima sessão.
+        Catálogo online de um point fictício dedicado a RPGs eletrônicos, para
+        descobrir os grandes nomes do gênero e reservar sua estação para jogar
+        sem pressa.
       </p>
       <img
-        src="assets/images/dado-d20.svg"
-        alt="Dado de vinte faces vermelho com o número 20 no centro"
+        src="assets/images/emblema-respawn.svg"
+        alt="Emblema circular com uma seta de respawn ao redor de um cristal azul brilhante"
         width="320"
         height="320"
       />
@@ -26,59 +27,77 @@
 
     <main>
       <section>
-        <h2>O que você encontra na taverna</h2>
+        <h2>O que você encontra aqui</h2>
         <ul>
-          <li>Mesas abertas de D&amp;D 5e, Tormenta20 e sistemas indie</li>
-          <li>Livros, fichas e miniaturas para usar na sessão</li>
-          <li>One-shots, campanhas longas e tutoriais para quem nunca jogou</li>
+          <li>Estações com os grandes RPGs do momento, prontas para jogar</li>
+          <li>Builds, guias e dicas para não travar em nenhum chefe</li>
+          <li>Sessões avulsas, maratonas e tutoriais para quem tá começando agora</li>
         </ul>
         <p>
-          Consulte regras oficiais, suplementos e lançamentos na
+          Consulte reviews, guias e lançamentos na
           <a
-            href="https://jamboeditora.com.br"
+            href="https://www.ign.com"
             target="_blank"
             rel="noopener noreferrer"
-            >Jambô Editora</a
+            >IGN</a
           >.
         </p>
       </section>
 
       <section>
-        <h2>Mesas em destaque</h2>
+        <h2>Jogos em destaque</h2>
         <table>
           <caption>
-            Campanhas com vagas nesta semana
+            Catálogo desta semana
           </caption>
           <thead>
             <tr>
-              <th>Aventura</th>
-              <th>Sistema</th>
-              <th>Nível</th>
-              <th>Vagas</th>
+              <th>Jogo</th>
+              <th>Estúdio</th>
+              <th>Ano</th>
+              <th>Nota da crítica</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>A Maldição de Strahd</td>
-              <td>D&amp;D 5e</td>
-              <td>5</td>
-              <td>2 cadeiras</td>
+              <td>The Elder Scrolls V: Skyrim</td>
+              <td>Bethesda Game Studios</td>
+              <td>2011</td>
+              <td>9.4</td>
             </tr>
             <tr>
-              <td>O Coração de Rubra</td>
-              <td>Tormenta20</td>
-              <td>3</td>
-              <td>3 cadeiras</td>
+              <td>Elden Ring</td>
+              <td>FromSoftware</td>
+              <td>2022</td>
+              <td>9.7</td>
+            </tr>
+            <tr>
+              <td>The Witcher 3: Wild Hunt</td>
+              <td>CD Projekt Red</td>
+              <td>2015</td>
+              <td>9.6</td>
+            </tr>
+            <tr>
+              <td>Baldur's Gate 3</td>
+              <td>Larian Studios</td>
+              <td>2023</td>
+              <td>9.8</td>
+            </tr>
+            <tr>
+              <td>Lords of the Fallen</td>
+              <td>Hexworks</td>
+              <td>2023</td>
+              <td>7.5</td>
             </tr>
           </tbody>
         </table>
       </section>
 
       <section>
-        <h2>Trailer da sessão de abertura</h2>
+        <h2>Trailer do point</h2>
         <p>
-          Um convite curto à mesa da Taverna do D20: o mestre apresenta a guilda
-          antes da primeira rolagem.
+          Um convite rápido: como funciona reservar sua estação e escolher o
+          RPG do dia.
         </p>
         <!--
           preload="none": o vídeo fica abaixo da dobra (depois do cabeçalho,
@@ -90,24 +109,24 @@
         <video
           id="intro-sessao"
           controls
-          poster="assets/images/poster-sessao-taverna.jpg"
+          poster="assets/images/poster-trailer-respawn-point.jpg"
           preload="none"
           width="854"
           height="480"
         >
-          <source src="assets/videos/intro-taverna.webm" type="video/webm" />
-          <source src="assets/videos/intro-taverna.mp4" type="video/mp4" />
+          <source src="assets/videos/trailer-respawn-point.webm" type="video/webm" />
+          <source src="assets/videos/trailer-respawn-point.mp4" type="video/mp4" />
           <track
             kind="subtitles"
-            src="assets/captions/intro-taverna.vtt"
+            src="assets/captions/trailer-respawn-point.vtt"
             srclang="pt"
             label="Português"
             default
           />
           Seu navegador não reproduz vídeo HTML5. Baixe o
-          <a href="assets/videos/intro-taverna.mp4">MP4</a>
+          <a href="assets/videos/trailer-respawn-point.mp4">MP4</a>
           ou o
-          <a href="assets/videos/intro-taverna.webm">WebM</a>.
+          <a href="assets/videos/trailer-respawn-point.webm">WebM</a>.
         </video>
         <p>
           <small id="formato-suportado"></small>
@@ -115,10 +134,10 @@
       </section>
 
       <section>
-        <h2>Reserve uma cadeira na mesa</h2>
+        <h2>Reserve sua estação</h2>
         <p>
-          Escolha data, horário e o tipo de sessão. Confirmamos a vaga e o
-          sistema por e-mail.
+          Escolha o jogo, a data e o horário. Confirmamos sua estação por
+          e-mail.
         </p>
 
         <form action="#" method="post">
@@ -168,8 +187,21 @@
             <legend>Detalhes da sessão</legend>
 
             <p>
+              <label for="jogo">Jogo</label>
+              <select id="jogo" name="jogo" required>
+                <option value="">Selecione uma opção</option>
+                <option value="skyrim">The Elder Scrolls V: Skyrim</option>
+                <option value="elden-ring">Elden Ring</option>
+                <option value="witcher-3">The Witcher 3: Wild Hunt</option>
+                <option value="baldurs-gate-3">Baldur's Gate 3</option>
+                <option value="lords-of-the-fallen">Lords of the Fallen</option>
+                <option value="indeciso">Ainda não decidi</option>
+              </select>
+            </p>
+
+            <p>
               <label for="data">Data</label>
-              <input type="date" id="data" name="data" min="2026-08-19" required />
+              <input type="date" id="data" name="data" min="2026-08-31" required />
             </p>
 
             <p>
@@ -191,7 +223,7 @@
                 id="pessoas"
                 name="pessoas"
                 min="1"
-                max="6"
+                max="4"
                 value="1"
                 required
               />
@@ -201,15 +233,15 @@
               <label for="tipo-sessao">Tipo de sessão</label>
               <select id="tipo-sessao" name="tipo-sessao" required>
                 <option value="">Selecione uma opção</option>
-                <option value="oneshot">One-shot (3 horas)</option>
-                <option value="campanha">Sessão de campanha (4 horas)</option>
+                <option value="avulsa">Sessão avulsa (2 horas)</option>
+                <option value="maratona">Maratona (4 horas)</option>
                 <option value="tutorial">Tutorial para iniciantes</option>
-                <option value="mesa-aberta">Mesa aberta da taverna</option>
+                <option value="estacao-livre">Estação livre</option>
               </select>
             </p>
 
             <fieldset>
-              <legend>Formato da mesa</legend>
+              <legend>Formato da sessão</legend>
               <p>
                 <input
                   type="radio"
@@ -218,7 +250,7 @@
                   value="presencial"
                   checked
                 />
-                <label for="formato-presencial">Presencial na taverna</label>
+                <label for="formato-presencial">Presencial no Point</label>
               </p>
               <p>
                 <input
@@ -227,7 +259,7 @@
                   name="formato"
                   value="online"
                 />
-                <label for="formato-online">Online (Roll20 / Discord)</label>
+                <label for="formato-online">Online (Steam Remote Play / Discord)</label>
               </p>
             </fieldset>
           </fieldset>
@@ -240,7 +272,7 @@
     </main>
 
     <footer>
-      <p>Taverna do D20 — Recife, PE. Projeto Integrador de Front-end para Web.</p>
+      <p>Ponto de Respawn — Projeto Integrador de Front-end para Web.</p>
     </footer>
     <script src="js/can-play-type.js"></script>
   </body>
