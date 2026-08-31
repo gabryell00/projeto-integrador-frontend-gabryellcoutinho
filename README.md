@@ -1,7 +1,7 @@
-# Taverna do D20
+# Ponto de Respawn
 
 Projeto Integrador de Desenvolvimento Front-end para Web.
 
-A Taverna do D20 é o catálogo online de uma guilda fictícia de RPG de mesa em Recife. O site apresenta campanhas em destaque, sistemas e reserva de cadeiras para quem quer entrar numa mesa.
+O Ponto de Respawn é um catálogo e hub de avaliações de RPGs eletrônicos marcantes — de Skyrim a Lords of the Fallen. O site reúne notas da crítica e um formulário onde qualquer jogador pode avaliar um jogo do catálogo.
 
-O objetivo é facilitar a busca por one-shots, campanhas longas e a reserva de horários para jogar na taverna.
+O objetivo é ajudar quem está decidindo o próximo RPG a jogar, combinando dados curados do catálogo com a opinião de quem já jogou.
