@@ -75,6 +75,46 @@
       </section>
 
       <section>
+        <h2>Trailer da sessão de abertura</h2>
+        <p>
+          Um convite curto à mesa da Taverna do D20: o mestre apresenta a guilda
+          antes da primeira rolagem.
+        </p>
+        <!--
+          preload="none": o vídeo fica abaixo da dobra (depois do cabeçalho,
+          da lista e da tabela). Não baixamos mídia até o visitante dar play,
+          o que economiza dados em conexões lentas (Seção 6.1).
+          metadata serviria só para duração; auto faria download imediato
+          e não cabe neste trailer secundário.
+        -->
+        <video
+          id="intro-sessao"
+          controls
+          poster="assets/images/poster-sessao-taverna.jpg"
+          preload="none"
+          width="854"
+          height="480"
+        >
+          <source src="assets/videos/intro-taverna.webm" type="video/webm" />
+          <source src="assets/videos/intro-taverna.mp4" type="video/mp4" />
+          <track
+            kind="subtitles"
+            src="assets/captions/intro-taverna.vtt"
+            srclang="pt"
+            label="Português"
+            default
+          />
+          Seu navegador não reproduz vídeo HTML5. Baixe o
+          <a href="assets/videos/intro-taverna.mp4">MP4</a>
+          ou o
+          <a href="assets/videos/intro-taverna.webm">WebM</a>.
+        </video>
+        <p>
+          <small id="formato-suportado"></small>
+        </p>
+      </section>
+
+      <section>
         <h2>Reserve uma cadeira na mesa</h2>
         <p>
           Escolha data, horário e o tipo de sessão. Confirmamos a vaga e o
@@ -202,5 +242,6 @@
     <footer>
       <p>Taverna do D20 — Recife, PE. Projeto Integrador de Front-end para Web.</p>
     </footer>
+    <script src="js/can-play-type.js"></script>
   </body>
 </html>
