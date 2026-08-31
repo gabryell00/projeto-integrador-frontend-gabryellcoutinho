@@ -1,0 +1,265 @@
+:root {
+  --bg-1: #2a2018;
+  --bg-2: #14100c;
+  --ink: #f0e6d2;
+  --muted: #bba98c;
+  --line: #4a3c2a;
+  --card: #241c14;
+  --couro: #3D2914;
+  --dourado: #C9A227;
+  --dourado-claro: #E8D5A3;
+  --mundo-aberto: #6B9B37;
+  --souls: #8C2F2F;
+  --crpg: #2F6B8C;
+  --radius: 12px;
+  --shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+  color: var(--ink);
+  line-height: 1.45;
+  font-size: 14px;
+  background:
+    radial-gradient(circle at top left, rgba(201, 162, 39, 0.12), transparent 34%),
+    radial-gradient(circle at bottom right, rgba(140, 47, 47, 0.1), transparent 30%),
+    linear-gradient(180deg, var(--bg-1), var(--bg-2));
+}
+
+.page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px 16px 32px;
+}
+
+.intro {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 20px 22px;
+  margin-bottom: 16px;
+  box-shadow: var(--shadow);
+}
+
+.intro h1 {
+  margin: 0 0 8px;
+  font-family: "Cinzel", "IBM Plex Sans", serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  color: var(--dourado-claro);
+}
+
+.subtitulo {
+  margin: 0;
+  color: var(--muted);
+}
+
+.subtitulo code,
+.secao code {
+  font-family: "IBM Plex Mono", Consolas, monospace;
+  font-size: 0.85em;
+  background: #1a140d;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 1px 5px;
+  color: var(--dourado-claro);
+}
+
+.secao {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 20px 22px;
+  margin-bottom: 14px;
+  box-shadow: var(--shadow);
+}
+
+.secao h2 {
+  margin: 0 0 8px;
+  font-family: "Cinzel", "IBM Plex Sans", serif;
+  font-size: 1.15rem;
+  color: var(--dourado-claro);
+}
+
+.secao > p {
+  margin: 0 0 14px;
+  color: var(--muted);
+}
+
+.grade-jogos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.jogo {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 12px;
+  background: #1c150e;
+}
+
+.jogo-topo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.jogo-topo h3 {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--ink);
+}
+
+.jogo-topo svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.jogo p {
+  margin: 0 0 4px;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.jogo p.meta {
+  font-style: italic;
+  margin-bottom: 6px;
+}
+
+.jogo p:last-child {
+  margin-bottom: 0;
+}
+
+.jogo strong {
+  color: var(--dourado-claro);
+}
+
+.controles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.btn {
+  border: none;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font: inherit;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  transition: filter 0.15s ease, transform 0.15s ease;
+}
+
+.btn:hover {
+  filter: brightness(1.12);
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.btn-errado {
+  background: #7a2c2c;
+}
+
+.btn-corrigido {
+  background: #2f6b4f;
+}
+
+.graficos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  margin-bottom: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+canvas {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #100c08;
+}
+
+.legenda {
+  list-style: none;
+  margin: 14px 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  font-size: 0.88rem;
+  color: var(--muted);
+}
+
+.legenda .cor {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  margin-right: 6px;
+  vertical-align: -1px;
+}
+
+.cor.mundo-aberto { background: var(--mundo-aberto); }
+.cor.souls { background: var(--souls); }
+.cor.crpg { background: var(--crpg); }
+
+.cristais {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+.cristais figure {
+  text-align: center;
+}
+
+.cristais svg,
+.cristais canvas {
+  margin: 0 auto;
+  border: none;
+  background: transparent;
+}
+
+footer {
+  margin-top: 8px;
+  text-align: center;
+  color: #8a7a63;
+  font-size: 0.8rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+@media (max-width: 720px) {
+  .grade-jogos,
+  .graficos {
+    grid-template-columns: 1fr;
+  }
+}
