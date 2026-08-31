@@ -1,7 +1,7 @@
-# Oficina do Vinil
+# Taverna do D20
 
 Projeto Integrador de Desenvolvimento Front-end para Web.
 
-A Oficina do Vinil é o catálogo online de uma loja fictícia de discos de vinil usados em Recife. O site apresenta álbuns em destaque, preços e sessões de escuta para quem quer descobrir música fora das playlists automáticas.
+A Taverna do D20 é o catálogo online de uma guilda fictícia de RPG de mesa em Recife. O site apresenta campanhas em destaque, sistemas e reserva de cadeiras para quem quer entrar numa mesa.
 
-O objetivo é facilitar a busca por discos raros e a reserva de horários para ouvir LPs na loja antes de comprar.
+O objetivo é facilitar a busca por one-shots, campanhas longas e a reserva de horários para jogar na taverna.
