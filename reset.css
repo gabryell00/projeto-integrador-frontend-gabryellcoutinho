@@ -1,0 +1,9 @@
+/* box-sizing: border-box em tudo - padding e borda passam a contar
+   DENTRO da largura declarada, em vez de somados a ela (Secao 4.1). */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}

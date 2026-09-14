@@ -1,0 +1,264 @@
+:root {
+  --cor-primaria: #4fc3f7;
+  --cor-acento: #c9a227;
+  --cor-texto: #f5efe0;
+  --cor-texto-suave: #bba98c;
+  --cor-fundo: #14100c;
+  --cor-card: #1c150e;
+  --cor-linha: #3a2f22;
+  --raio: 10px;
+  --sombra: 0 4px 16px rgba(0, 0, 0, 0.35);
+}
+
+html {
+  font-size: 100%; /* 1rem = 16px no padrao do navegador, mas escala com a preferencia do usuario */
+}
+
+body {
+  font-family: Verdana, "Segoe UI", sans-serif;
+  background: var(--cor-fundo);
+  color: var(--cor-texto);
+  line-height: 1.6;
+}
+
+h1,
+h2 {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+h1 {
+  font-size: 2rem;
+  color: var(--cor-acento);
+}
+
+h2 {
+  font-size: 1.35rem;
+  color: var(--cor-acento);
+  margin-bottom: 0.75rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+/* #topo: cabecalho unico da pagina, por isso ID em vez de classe */
+#topo {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 1rem;
+  text-align: center;
+}
+
+#topo > h1 {
+  margin-bottom: 0.5rem;
+}
+
+.subtitulo {
+  max-width: 620px;
+  margin: 0 auto;
+  color: var(--cor-texto-suave);
+}
+
+#topo img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1.5rem auto 0;
+}
+
+.aviso {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  max-width: 900px;
+  margin: 0 auto 1rem;
+  padding: 0.6rem 1rem;
+  background: var(--cor-card);
+  border: 1px solid var(--cor-linha);
+  border-radius: var(--raio);
+  font-size: 0.9rem;
+  color: var(--cor-texto-suave);
+}
+
+.aviso button {
+  width: 1.6rem;
+  height: 1.6rem;
+  border: 1px solid var(--cor-linha);
+  border-radius: 999px;
+  background: none;
+  color: var(--cor-texto-suave);
+  font-size: 1rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.aviso button:hover,
+.aviso button:focus-visible {
+  color: var(--cor-acento);
+  border-color: var(--cor-acento);
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.5rem 3rem;
+}
+
+section {
+  background: var(--cor-card);
+  border: 1px solid var(--cor-linha);
+  border-radius: var(--raio);
+  padding: 1.5rem 1.75rem;
+  margin-top: 1.5rem;
+  box-shadow: var(--sombra);
+}
+
+/* Combinador de irmao geral (~): todo p que vem depois do h2 na mesma section */
+h2 ~ p {
+  color: var(--cor-texto-suave);
+  margin-bottom: 0.5rem;
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 1.25rem;
+}
+
+ul li {
+  padding: 0.2rem 0;
+}
+
+ul li:first-child {
+  color: var(--cor-texto);
+  font-weight: 600;
+}
+
+/* Links: ordem LoVe/HAte (Secao 5, teoria) - mesma especificidade,
+   quem vem depois no arquivo eh quem vale */
+a:link {
+  color: var(--cor-primaria);
+  text-decoration: none;
+}
+a:visited {
+  color: #8a7fd1;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:active {
+  color: var(--cor-acento);
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+caption {
+  text-align: left;
+  color: var(--cor-texto-suave);
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+th,
+td {
+  border: 1px solid var(--cor-linha);
+  padding: 0.6rem 0.75rem;
+  text-align: left;
+}
+
+thead th {
+  background: var(--cor-fundo);
+  color: var(--cor-acento);
+}
+
+tbody tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+form fieldset {
+  border: 1px solid var(--cor-linha);
+  border-radius: var(--raio);
+  padding: 1rem 1.25rem;
+  margin-bottom: 1rem;
+}
+
+form fieldset fieldset {
+  margin-bottom: 0.5rem;
+}
+
+form legend {
+  padding: 0 0.5rem;
+  color: var(--cor-acento);
+  font-weight: 600;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-size: 0.9rem;
+  color: var(--cor-texto-suave);
+}
+
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  margin-bottom: 0.9rem;
+  border: 1px solid var(--cor-linha);
+  border-radius: 6px;
+  background: var(--cor-fundo);
+  color: var(--cor-texto);
+  font: inherit;
+  transition: border-color 0.2s ease;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+  outline: none;
+  border-color: var(--cor-primaria);
+}
+
+form input:focus-visible,
+form select:focus-visible,
+form textarea:focus-visible {
+  outline: 2px solid var(--cor-primaria);
+  outline-offset: 2px;
+}
+
+button[type="submit"] {
+  padding: 0.75rem 1.5rem;
+  background: var(--cor-primaria);
+  color: #0d0714;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: filter 0.2s ease;
+}
+
+button[type="submit"]:hover,
+button[type="submit"]:focus-visible {
+  filter: brightness(1.1);
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  color: var(--cor-texto-suave);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 640px) {
+  #topo,
+  main {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
