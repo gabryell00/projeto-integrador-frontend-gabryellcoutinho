@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <nav class="nav-principal">
+      <a href="index.html" aria-current="page">Início</a>
+      <a href="compendio/index.html">Compêndio</a>
+    </nav>
+
     <header id="topo">
       <p class="aviso">
         <button type="button" aria-label="Fechar aviso de novidade">×</button>
@@ -48,51 +53,33 @@
 
       <section>
         <h2>Jogos em destaque</h2>
-        <table>
-          <caption>
-            Catálogo desta semana
-          </caption>
-          <thead>
-            <tr>
-              <th>Jogo</th>
-              <th>Estúdio</th>
-              <th>Ano</th>
-              <th>Nota da crítica</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>The Elder Scrolls V: Skyrim</td>
-              <td>Bethesda Game Studios</td>
-              <td>2011</td>
-              <td>9.4</td>
-            </tr>
-            <tr>
-              <td>Elden Ring</td>
-              <td>FromSoftware</td>
-              <td>2022</td>
-              <td>9.7</td>
-            </tr>
-            <tr>
-              <td>The Witcher 3: Wild Hunt</td>
-              <td>CD Projekt Red</td>
-              <td>2015</td>
-              <td>9.6</td>
-            </tr>
-            <tr>
-              <td>Baldur's Gate 3</td>
-              <td>Larian Studios</td>
-              <td>2023</td>
-              <td>9.8</td>
-            </tr>
-            <tr>
-              <td>Lords of the Fallen</td>
-              <td>Hexworks</td>
-              <td>2023</td>
-              <td>7.5</td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="grade-jogos">
+          <article class="card-jogo">
+            <h3>The Elder Scrolls V: Skyrim</h3>
+            <p class="estudio">Bethesda Game Studios · 2011</p>
+            <p class="nota">9.4</p>
+          </article>
+          <article class="card-jogo">
+            <h3>Elden Ring</h3>
+            <p class="estudio">FromSoftware · 2022</p>
+            <p class="nota">9.7</p>
+          </article>
+          <article class="card-jogo">
+            <h3>The Witcher 3: Wild Hunt</h3>
+            <p class="estudio">CD Projekt Red · 2015</p>
+            <p class="nota">9.6</p>
+          </article>
+          <article class="card-jogo">
+            <h3>Baldur's Gate 3</h3>
+            <p class="estudio">Larian Studios · 2023</p>
+            <p class="nota">9.8</p>
+          </article>
+          <article class="card-jogo">
+            <h3>Lords of the Fallen</h3>
+            <p class="estudio">Hexworks · 2023</p>
+            <p class="nota">7.5</p>
+          </article>
+        </div>
       </section>
 
       <section>
